@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>카드 맞추기 게임</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-wrap">
+      <h1>카드 맞추기 게임</h1>
+      <div class="hud">
+        <p>시도 횟수: <span id="moves">0</span></p>
+        <p>맞춘 쌍: <span id="pairs">0</span> / <span id="totalPairs">8</span></p>
+        <button id="restartBtn" type="button">다시 시작</button>
+      </div>
+      <section id="board" class="board" aria-label="카드 보드"></section>
+      <p id="message" class="message" aria-live="polite"></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
